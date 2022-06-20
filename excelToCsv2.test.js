@@ -11,5 +11,5 @@ test('Error', () => {
         callback('some error');
     });
 
-    expect(excelToCsv('Does not matter')).toBeUnDefined;
+    expect(excelToCsv('Does not matter')).toThrowError;
 });
